@@ -1,0 +1,472 @@
+{
+  "@@locale": "en",
+  "navChannels": "Channels",
+  "@navChannels": {
+    "description": "Navigation menu label for channels screen"
+  },
+  "navFeed": "Feed",
+  "@navFeed": {
+    "description": "Navigation menu label for feed screen"
+  },
+  "navFavorites": "Favorites",
+  "@navFavorites": {
+    "description": "Navigation menu label for favorites screen"
+  },
+  "navPlaylists": "Playlists",
+  "@navPlaylists": {
+    "description": "Navigation menu label for playlists screen"
+  },
+  "navSettings": "Settings",
+  "@navSettings": {
+    "description": "Navigation menu label for settings screen"
+  },
+
+  "settingsSectionFolders": "Folders",
+  "settingsFolderManage": "Manage Folders",
+  "settingsFolderManageDesc": "Add, edit, delete folders",
+
+  "settingsSectionDisplay": "Display",
+  "settingsLanguage": "Language / 언어",
+  "settingsLanguageSystem": "System (시스템 설정)",
+  "settingsChipLayout": "Folder Layout",
+  "settingsChipLayoutSingleLine": "Single Line",
+  "settingsChipLayoutWrap": "Wrap",
+  "chipLayoutToggleWrap": "View Wrap Layout",
+  "chipLayoutToggleSingleLine": "View Single Line",
+  "settingsFolderView": "Folder View",
+  "settingsShowChannelCount": "Show Channel Count",
+  "settingsShowVideoCount": "Show Video Count",
+  "settingsFolderSizeLarge": "Large",
+  "settingsFolderSizeSmall": "Small",
+  "settingsDefaultChannelSection": "YouTube Open Tab",
+  "settingsVideosPerChannel": "Videos per Channel",
+  "settingsVideosPerChannelCount": "{count}",
+  "@settingsVideosPerChannelCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsCaptionDisplay": "Caption Display",
+  "settingsCaptionShow": "Show",
+  "settingsCaptionHide": "Hide",
+  "settingsChannelTapAction": "Channel Tap Action",
+  "settingsChannelTapLatestVideos": "View Latest Videos",
+  "settingsChannelTapOpenYoutube": "Open in YouTube",
+  "settingsVideoCardTapAction": "Video Card Tap Action",
+  "settingsVideoCardTapInAppPlayer": "In-App Player",
+  "settingsVideoCardTapOpenYoutube": "Open in YouTube",
+  "settingsVideoCardLayoutStyle": "Video Card Layout",
+  "settingsVideoCardLayoutHorizontal": "Horizontal Card",
+  "settingsVideoCardLayoutVertical": "Vertical Card",
+  "settingsMenuOrder": "Menu Order",
+  "settingsMenuOrderDesc": "Change bottom navigation bar order",
+  "settingsResetApp": "Reset App",
+
+  "settingsSectionData": "Data",
+  "settingsBackup": "Backup Data",
+  "settingsRestore": "Restore Data",
+  "settingsClearCache": "Clear Image Cache",
+
+  "settingsSectionInfo": "Information",
+  "settingsVersion": "Version",
+  "settingsLicense": "Open Source Licenses",
+
+  "settingsSectionAccount": "Account",
+  "settingsGoogleAccount": "Google Account",
+  "settingsNotLoggedIn": "Not logged in",
+  "settingsLogout": "Logout",
+
+  "addToFolder": "Add to Folder",
+  "sectionSettings": "YouTube Open Tab",
+  "subscriberCount": "{count} subscribers",
+  "@subscriberCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "channelsSelected": "{count} channels selected",
+  "@channelsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "itemsSelected": "{count} selected",
+  "@itemsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeJustNow": "Just now",
+  "timeMinutesAgo": "{count}m ago",
+  "@timeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeHoursAgo": "{count}h ago",
+  "@timeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeDaysAgo": "{count}d ago",
+  "@timeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeWeeksAgo": "{count}w ago",
+  "@timeWeeksAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeMonthsAgo": "{count}mo ago",
+  "@timeMonthsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "itemCount": "{count} items",
+  "@itemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteConfirmTitle": "Delete",
+  "deleteSelectedVideosConfirm": "Delete {count} selected videos?",
+  "@deleteSelectedVideosConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteFavoriteConfirm": "Remove from favorites?",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "selectAll": "Select All",
+  "select": "Select",
+
+  "timeYearsAgo": "{count}y ago",
+  "@timeYearsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "videoCount": "{count} videos",
+  "@videoCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "channelCount": "{count} channels",
+  "@channelCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "playlistCount": "{count} playlists loaded",
+  "@playlistCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "removeFromFolder": "Remove from Folder",
+  "deleteChannel": "Delete Channel",
+  "deleteChannelConfirm": "Are you sure you want to completely delete {name}?\nIt will be removed from all folders.",
+  "@deleteChannelConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "removeChannelConfirm": "Are you sure you want to remove {name} from this collection?\nIt will remain in your subscriptions.",
+  "@removeChannelConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteChannelsConfirm": "Are you sure you want to completely delete {count} channels?\nThey will be removed from all folders.",
+  "@deleteChannelsConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "removeChannelsConfirm": "Are you sure you want to remove {count} channels from this collection?\nThey will remain in your subscriptions.",
+  "@removeChannelsConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "channelDeleted": "Channel deleted",
+  "removedFromFolder": "Removed from folder",
+  "addedToFolder": "Added to {name}",
+  "@addedToFolder": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channelsDeleted": "{count} channels deleted",
+  "@channelsDeleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "channelsRemoved": "{count} channels removed",
+  "@channelsRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "channelsAddedTo": "{count} channels added to {name}",
+  "@channelsAddedTo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "cannotOpenChannel": "Cannot open channel",
+  "pleaseSelectChannels": "Please select channels",
+  "createFolderFirst": "Please create a folder first",
+  "createCategoryFirst": "Please create a category first",
+  "unsubscribed": "Unsubscribed",
+  "uploadedAgo": "uploaded {time}",
+  "@uploadedAgo": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+
+  "sectionSettingsTitle": "{title}\nOpen Tab Settings",
+  "@sectionSettingsTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "useDefaultSection": "Use default ({section})",
+  "@useDefaultSection": {
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionSetToDefault": "Section set to default",
+  "sectionSetTo": "Set to {section} section",
+  "@sectionSetTo": {
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+
+  "channelsUpdated": "Channel list updated",
+  "noSubscriptions": "No subscribed channels",
+  "noSearchResults": "No search results",
+  "cannotLoadPlaylists": "Cannot load playlists",
+  "retry": "Retry",
+  "noPlaylists": "No playlists",
+  "noVideos": "No videos",
+  "noFavorites": "No favorited videos",
+
+  "customOrder": "Custom order",
+  "alphabetical": "Alphabetical",
+  "multiSelect": "Multi select",
+  "openInYoutube": "Open in YouTube",
+  "latestVideos": "Latest videos",
+
+  "formatTenThousand": "{count}K",
+  "@formatTenThousand": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "formatThousand": "{count}K",
+  "@formatThousand": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "formatMillion": "{count}M",
+  "@formatMillion": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+
+  "dialogLogoutTitle": "Logout",
+  "dialogLogoutContent": "Are you sure you want to logout?",
+  "dialogResetAppTitle": "Reset App",
+  "dialogResetAppContent": "All data will be deleted including subscriptions, folders, favorites, and playlists.\n\nDo you want to reset the app?",
+  "dialogResetAppSuccess": "App has been reset.",
+  "dialogClearCacheTitle": "Clear Cache",
+  "dialogClearCacheContent": "Clear image cache?\nImages will be reloaded when you restart the app.",
+  "dialogClearCacheSuccess": "Image cache cleared.",
+  "dialogClearCacheFailed": "Failed to clear cache",
+  "dialogBackupSuccess": "Backup completed.\nSaved to: {filePath}",
+  "@dialogBackupSuccess": {
+    "placeholders": {
+      "filePath": {
+        "type": "String"
+      }
+    }
+  },
+  "dialogBackupCancelled": "Backup cancelled.",
+  "dialogBackupFailed": "Backup failed",
+  "dialogRestoreTitle": "Restore Data",
+  "dialogRestoreContent": "Restore data from backup file?\nExisting sort order and folders may be changed.",
+  "dialogRestoreSuccess": "Restore completed.",
+  "dialogRestoreFailed": "Restore failed",
+
+  "folderCreate": "Create Folder",
+  "folderEdit": "Edit Folder",
+  "folderDelete": "Delete Folder",
+  "folderName": "Folder name",
+  "folderCreated": "Folder created.",
+  "folderUpdated": "Folder updated.",
+  "folderDeleted": "Folder deleted.",
+  "folderDeleteConfirm": "Delete \"{name}\" folder?",
+  "@folderDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "folderManage": "Manage Folders",
+  "folderEmpty": "No folders",
+  "folderCreateNew": "Create folder",
+  "create": "Create",
+  "edit": "Edit",
+
+  "sectionHome": "Home",
+  "sectionVideos": "Videos",
+  "sectionShorts": "Shorts",
+  "sectionLive": "Live",
+  "sectionPodcasts": "Podcasts",
+  "sectionPlaylists": "Playlists",
+  "sectionCommunity": "Community",
+
+  "confirm": "OK",
+  "errorUnknown": "An unknown error occurred.",
+  "errorNetwork": "Please check your internet connection.",
+  "errorUnauthorized": "Login has expired.",
+  "errorQuotaExceeded": "YouTube API daily quota exceeded.\nPlease try again after 5 PM (Korea time) tomorrow.",
+  "errorNotFound": "The requested data could not be found.",
+  "errorTimeout": "Request timed out.",
+  "errorGeneric": "An error occurred: {error}",
+  "@errorGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "appSubtitle": "YouTube Subscription Manager",
+  "loadingVideos": "Loading videos...",
+  "allChannelsFilter": "Subscribed",
+
+  "showFolderFab": "Show Folder Button",
+  "hideFolderFab": "Hide Folder Button",
+  "refreshSubscriptions": "Refresh Subscriptions",
+  "refreshPlaylists": "Refresh Playlists",
+
+  "fetchSubscriptionsTitle": "No Subscriptions",
+  "fetchSubscriptionsMessage": "Would you like to fetch your YouTube subscriptions?",
+  "fetchSubscriptionsYes": "Fetch",
+  "fetchSubscriptionsNo": "Later",
+
+  "createFolderDialogTitle": "No Folders",
+  "createFolderDialogMessage": "Would you like to create a folder?",
+  "createFolderDialogYes": "Create",
+  "createFolderDialogNo": "Later",
+  "createFolderDialogDontShowAgain": "Don't show again",
+  "createFolderDialogManualGuide": "You can add folders later in Settings > Manage Folders.",
+
+  "swipeEnabledDescription": "Only checked folders are accessible via swipe",
+
+  "filterByChannel": "Filter by Channel",
+  "allChannels": "All",
+  "errorDetail": "Error Details",
+  "viewErrorMessage": "View error message",
+
+  "sortDialogTitle": "Sort",
+  "sortPlaylistOrder": "Playlist Order",
+  "sortPlaylistOrderReverse": "Playlist Order (Reverse)",
+  "sortNewest": "Newest",
+  "sortOldest": "Oldest",
+  "sortTitle": "Title",
+
+  "loginSubtitle": "Organize your YouTube\nsubscriptions freely",
+  "loginWithGoogle": "Sign in with Google",
+  "loggingIn": "Signing in...",
+  "loginPermissionNotice": "YouTube read permission required",
+  "loadingSubscriptions": "Loading subscriptions...",
+  "loginFailed": "Login failed.",
+
+  "longPressReorder": "Long press: Reorder",
+  "longPressDelete": "Long press: Delete",
+  "showDeleteConfirmation": "Show delete confirmation"
+}

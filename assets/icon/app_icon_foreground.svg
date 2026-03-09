@@ -1,0 +1,30 @@
+<svg width="432" height="432" viewBox="0 0 432 432" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Deck cards effect (stacked rectangles) - scaled down -->
+  <g filter="url(#shadow)" transform="translate(216, 216)">
+    <!-- Back card -->
+    <rect x="-130" y="-90" width="260" height="180" rx="20" fill="#ffffff" opacity="0.2" transform="rotate(-5)"/>
+
+    <!-- Middle card -->
+    <rect x="-130" y="-95" width="260" height="180" rx="20" fill="#ffffff" opacity="0.3" transform="rotate(-2)"/>
+
+    <!-- Front card with play button -->
+    <g>
+      <rect x="-130" y="-100" width="260" height="180" rx="20" fill="#ffffff" opacity="0.95"/>
+
+      <!-- YouTube play button -->
+      <g>
+        <!-- Play button circle -->
+        <circle cx="0" cy="0" r="50" fill="#FF0000"/>
+
+        <!-- Play triangle -->
+        <path d="M -18 -22 L -18 22 L 25 0 Z" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+</svg>

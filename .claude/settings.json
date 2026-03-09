@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"cd /d d:\\\\dev\\\\tubedeck && del /f flutter_input.txt flutter_run.log nul desktop.ini 2>nul\")",
+      "Bash(/d/dev/ANDROID_HOME/Sdk/emulator/emulator:*)"
+    ]
+  }
+}

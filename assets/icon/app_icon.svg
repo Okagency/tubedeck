@@ -1,0 +1,43 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="1024" height="1024" rx="180" fill="url(#bgGradient)"/>
+
+  <!-- Deck cards effect (stacked rectangles) -->
+  <g filter="url(#shadow)">
+    <!-- Back card -->
+    <rect x="200" y="350" width="624" height="400" rx="40" fill="#ffffff" opacity="0.15" transform="rotate(-5 512 550)"/>
+
+    <!-- Middle card -->
+    <rect x="200" y="340" width="624" height="400" rx="40" fill="#ffffff" opacity="0.25" transform="rotate(-2 512 540)"/>
+
+    <!-- Front card with play button -->
+    <g>
+      <rect x="200" y="324" width="624" height="400" rx="40" fill="#ffffff" opacity="0.95"/>
+
+      <!-- YouTube play button -->
+      <g transform="translate(512, 524)">
+        <!-- Play button circle -->
+        <circle cx="0" cy="0" r="120" fill="#FF0000"/>
+
+        <!-- Play triangle -->
+        <path d="M -40 -50 L -40 50 L 60 0 Z" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- App name hint (optional decorative element) -->
+  <g opacity="0.9">
+    <text x="512" y="880" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#ffffff" text-anchor="middle">TubeDeck</text>
+  </g>
+</svg>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SVG to PNG Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #preview {
+            margin: 20px 0;
+            border: 2px solid #ccc;
+            display: inline-block;
+        }
+        button {
+            background: #FF0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #CC0000;
+        }
+        .info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>TubeDeck Icon Converter</h1>
+    <div class="info">
+        <p>이 페이지는 app_icon.svg를 PNG 파일로 변환합니다.</p>
+        <p>아래 버튼들을 클릭해서 필요한 크기의 PNG를 다운로드하세요.</p>
+    </div>
+
+    <div id="preview"></div>
+
+    <div>
+        <button onclick="convertAndDownload(1024, 'app_icon.png')">
+            1024x1024 다운로드 (메인 아이콘)
+        </button>
+        <button onclick="convertAndDownload(432, 'app_icon_foreground.png')">
+            432x432 다운로드 (Adaptive 아이콘)
+        </button>
+    </div>
+
+    <script>
+        // SVG 내용 (app_icon.svg의 내용을 여기에 포함)
+        const svgContent = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="1024" height="1024" rx="180" fill="url(#bgGradient)"/>
+
+  <!-- Deck cards effect (stacked rectangles) -->
+  <g filter="url(#shadow)">
+    <!-- Back card -->
+    <rect x="200" y="350" width="624" height="400" rx="40" fill="#ffffff" opacity="0.15" transform="rotate(-5 512 550)"/>
+
+    <!-- Middle card -->
+    <rect x="200" y="340" width="624" height="400" rx="40" fill="#ffffff" opacity="0.25" transform="rotate(-2 512 540)"/>
+
+    <!-- Front card with play button -->
+    <g>
+      <rect x="200" y="324" width="624" height="400" rx="40" fill="#ffffff" opacity="0.95"/>
+
+      <!-- YouTube play button -->
+      <g transform="translate(512, 524)">
+        <!-- Play button circle -->
+        <circle cx="0" cy="0" r="120" fill="#FF0000"/>
+
+        <!-- Play triangle -->
+        <path d="M -40 -50 L -40 50 L 60 0 Z" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- App name hint (optional decorative element) -->
+  <g opacity="0.9">
+    <text x="512" y="880" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#ffffff" text-anchor="middle">TubeDeck</text>
+  </g>
+</svg>`;
+
+        // SVG 미리보기 표시
+        document.getElementById('preview').innerHTML = svgContent;
+
+        function convertAndDownload(size, filename) {
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            const img = new Image();
+            const svgBlob = new Blob([svgContent], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, size, size);
+                URL.revokeObjectURL(url);
+
+                canvas.toBlob(function(blob) {
+                    const link = document.createElement('a');
+                    link.download = filename;
+                    link.href = URL.createObjectURL(blob);
+                    link.click();
+                    URL.revokeObjectURL(link.href);
+                }, 'image/png');
+            };
+
+            img.src = url;
+        }
+    </script>
+</body>
+</html>
